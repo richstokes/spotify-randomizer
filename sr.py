@@ -58,14 +58,11 @@ if __name__ == "__main__":
             config = json.load(f)
     else:
         print('Please [Create a Spotify app](https://developer.spotify.com/dashboard)')
-        data = {}
-        data['client_id'] = input('Enter your client ID: ')
-        data['client_secret'] = input('Enter your client secret: ')
+        config = {}
+        config['client_id'] = input('Enter your client ID: ')
+        config['client_secret'] = input('Enter your client secret: ')
         with open('.spotifyapp', 'w') as outfile:
-            json.dump(data, outfile)
-
-        print('Please run this script again.')
-        exit()
+            json.dump(config, outfile)
 
     sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=config["client_id"],
                                                 client_secret=config["client_secret"],
