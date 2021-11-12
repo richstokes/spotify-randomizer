@@ -47,7 +47,6 @@ def create_playlist():
     # Add tracks to new playlist in chunks of 100
     print(f'Creating new {randomized_playlist_name} playlist..')
     iterator = iter(saved_track_ids)
-
     while chunk := list(islice(iterator, 100)):
         sp.user_playlist_add_tracks(sp.me(), new_playlist_id['id'], chunk)
 
@@ -55,7 +54,6 @@ def create_playlist():
 if __name__ == "__main__":
     config_file = Path(".spotifyapp")
     if config_file.is_file():
-        # file exists
         with open('.spotifyapp', 'r') as f:
             config = json.load(f)
     else:
@@ -63,7 +61,6 @@ if __name__ == "__main__":
         data = {}
         data['client_id'] = input('Enter your client ID: ')
         data['client_secret'] = input('Enter your client secret: ')
-
         with open('.spotifyapp', 'w') as outfile:
             json.dump(data, outfile)
 

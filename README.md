@@ -11,5 +11,5 @@ This script takes your "Liked Songs", and shuffles their order into a new playli
 ## Usage
 `python3 sr.py`  
 
-The first time you run, it will ask you to open a URL and paste in the URL you are redirected to. It's fine if this redirect goes somewhere non-existent / 404s. 
+The first time you run, it will ask you to open a URL, and then require you to paste in the URL you are redirected to. It's fine if this redirect goes somewhere non-existent / 404s. 
 
