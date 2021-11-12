@@ -1,6 +1,6 @@
 For when you want to randomize your saved songs into a new playlist.
 
-This script takes your "Liked Songs", and shuffles their order into a new playlist. Made because sometimes [Spotify's shuffle](https://medium.com/immensity/how-spotifys-shuffle-algorithm-works-19e963e75171) isn't totally random. 
+This script takes your "Liked Songs", and shuffles their order into a new playlist. I made this because [Spotify's shuffle](https://medium.com/immensity/how-spotifys-shuffle-algorithm-works-19e963e75171) isn't totally random and was interested in the results :-)
 
 ## Setup
 1. `pip3 install -r requirements.txt`
